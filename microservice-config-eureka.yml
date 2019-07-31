@@ -26,7 +26,7 @@ eureka:
 ---
 
 server:
-  port: 6001 #端口号
+  port: 6002 #端口号
 spring:
   profiles: prod # 生产环境
   application:
@@ -35,12 +35,12 @@ spring:
     
 eureka:
   instance:
-    hostname: eureka6001.com
+    hostname: eureka6002.com
   client:
     registerWithEureka: false
     fetchRegistry: false
     serviceUrl:
-      defaultZone: http://eureka6001.com:6001/eureka/
+      defaultZone: http://eureka6001.com:6002/eureka/
   server:
     enable-self-preservation: true # 开启自我保护机制*****************
 #保存时注意，选择 UTF-8 保存
